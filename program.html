@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program | Untuk Esok</title>
+    <meta name="description"
+        content="Jelajahi program-program nyata yang dijalankan komunitas Untuk Esok untuk mendukung SDGs.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Untuk Esok Logo" class="navbar-logo">
+            </a>
+
+            <div class="navbar-spacer"></div>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul class="navbar-ul">
+                    <li><a href="index.html" class="nav-item">Beranda</a></li>
+                    <li><a href="tentangkami.html" class="nav-item">Tentang Kami</a></li>
+                    <li><a href="program.html" class="nav-item">Program</a></li>
+                    <li><a href="donasi.html" class="btn btn-orange">Donasi</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+            <a href="index.html" class="mobile-nav-item">Beranda</a>
+            <a href="tentangkami.html" class="mobile-nav-item">Tentang Kami</a>
+            <a href="program.html" class="mobile-nav-item">Program</a>
+            <a href="donasi.html" class="mobile-donate-btn">Donasi</a>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <article class="section-padding bg-light">
+            <div class="container">
+
+                <!-- Page Heading -->
+                <h1 class="text-center section-heading">Program Kami</h1>
+
+                <!-- Filter / Sort Bar -->
+                <div class="filter-bar">
+                    <div class="sort-dropdown">
+                        <button class="sort-toggle-btn" id="sort-btn" aria-haspopup="true" aria-expanded="false">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <path d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path>
+                            </svg>
+                            Urutkan
+                        </button>
+                        <div class="sort-menu" id="sort-menu" role="menu">
+                            <a href="#" role="menuitem" data-sort="latest">Terbaru</a>
+                            <a href="#" role="menuitem" data-sort="oldest">Terlama</a>
+                            <a href="#" role="menuitem" data-sort="deadline_low">Batas Terdekat</a>
+                            <a href="#" role="menuitem" data-sort="deadline_high">Batas Terlama</a>
+                            <a href="#" role="menuitem" data-sort="name">Nama Program (A-Z)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program List -->
+                <div class="program-list" id="program-list">
+
+                    <!-- Program 1 -->
+                    <div class="program-list-item">
+                        <div class="pli-img program-bg-literasi" role="img" aria-label="Program Literasi"></div>
+                        <div class="pli-content">
+                            <h2 class="pli-title">Program Literasi</h2>
+                            <p class="pli-desc">
+                                Program peningkatan kemampuan membaca dan menulis bagi anak-anak di daerah yang
+                                membutuhkan.
+                                Relawan kami mengajar di berbagai sekolah dan komunitas secara rutin setiap minggu.
+                            </p>
+                            <div class="pli-meta">
+                                <span>Lokasi: Bali, Indonesia</span>
+                            </div>
+                            <div class="sdg-badges-row">
+                                <img src="images/sdgs/sdg-4.png" alt="SDG 4 - Quality Education" class="sdg-badge-img">
+                                <img src="images/sdgs/sdg-10.png" alt="SDG 10 - Reduced Inequalities"
+                                    class="sdg-badge-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div class="program-list-item">
+                        <div class="pli-img program-bg-komputer" role="img" aria-label="Program Komputer"></div>
+                        <div class="pli-content">
+                            <h2 class="pli-title">Program Komputer</h2>
+                            <p class="pli-desc">
+                                Pelatihan keterampilan digital dasar bagi pelajar dan masyarakat, mulai dari penggunaan
+                                perangkat komputer hingga internet secara produktif dan aman.
+                            </p>
+                            <div class="pli-meta">
+                                <span>Lokasi: Bali, Indonesia</span>
+                            </div>
+                            <div class="sdg-badges-row">
+                                <img src="images/sdgs/sdg-4.png" alt="SDG 4 - Quality Education" class="sdg-badge-img">
+                                <img src="images/sdgs/sdg-9.png" alt="SDG 9 - Industry Innovation"
+                                    class="sdg-badge-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div class="program-list-item">
+                        <div class="pli-img program-bg-numerasi" role="img" aria-label="Program Numerasi"></div>
+                        <div class="pli-content">
+                            <h2 class="pli-title">Program Numerasi</h2>
+                            <p class="pli-desc">
+                                Penguatan kemampuan berhitung dan berpikir matematis untuk anak-anak usia sekolah dasar
+                                melalui metode belajar yang menyenangkan dan interaktif.
+                            </p>
+                            <div class="pli-meta">
+                                <span>Lokasi: Bali, Indonesia</span>
+                            </div>
+                            <div class="sdg-badges-row">
+                                <img src="images/sdgs/sdg-4.png" alt="SDG 4 - Quality Education" class="sdg-badge-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 4 -->
+                    <div class="program-list-item">
+                        <div class="pli-img program-bg-bahasaInggris" role="img" aria-label="Program Bahasa Inggris">
+                        </div>
+                        <div class="pli-content">
+                            <h2 class="pli-title">Program Bahasa Inggris</h2>
+                            <p class="pli-desc">
+                                Kelas bahasa Inggris gratis yang membekali peserta dengan kemampuan komunikasi dasar
+                                untuk membuka peluang lebih luas di masa depan.
+                            </p>
+                            <div class="pli-meta">
+                                <span>Lokasi: Bali, Indonesia</span>
+                            </div>
+                            <div class="sdg-badges-row">
+                                <img src="images/sdgs/sdg-4.png" alt="SDG 4 - Quality Education" class="sdg-badge-img">
+                                <img src="images/sdgs/sdg-8.png" alt="SDG 8 - Decent Work" class="sdg-badge-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Untuk Esok Logo" class="footer-logo">
+                    </a>
+                    <p class="footer-tagline">Hari ini menanam aksi, esok menuai inspirasi!</p>
+                </div>
+                <div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentangkami.html">Tentang Kami</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="donasi.html">Donasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-contact-heading">Hubungi Kami</h3>
+                    <ul class="footer-links">
+                        <li>Email: untukesok180126@gmail.com</li>
+                        <li>Instagram: @untukesok</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Untuk Esok. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="program.js"></script>
+</body>
+
+</html>

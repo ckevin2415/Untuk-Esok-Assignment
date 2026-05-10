@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Esok | Hari ini menanam aksi, esok menuai inspirasi.</title>
+    <meta name="description"
+        content="Komunitas pelajar yang bergerak untuk menciptakan perubahan positif bagi masyarakat.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Untuk Esok Logo" class="navbar-logo">
+            </a>
+
+            <div class="navbar-spacer"></div>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul class="navbar-ul">
+                    <li><a href="index.html" class="nav-item">Beranda</a></li>
+                    <li><a href="tentangkami.html" class="nav-item">Tentang Kami</a></li>
+                    <li><a href="program.html" class="nav-item">Program</a></li>
+                    <li><a href="donasi.html" class="btn btn-orange">Donasi</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+            <a href="index.html" class="mobile-nav-item">Beranda</a>
+            <a href="tentangkami.html" class="mobile-nav-item">Tentang Kami</a>
+            <a href="program.html" class="mobile-nav-item">Program</a>
+            <a href="donasi.html" class="mobile-donate-btn">Donasi</a>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- Hero Slideshow -->
+        <section class="hero-slideshow" aria-label="Hero slideshow">
+            <div class="slide slide-banner1 slide-active"></div>
+            <div class="slide slide-banner2 slide-inactive"></div>
+            <div class="slide slide-banner3 slide-inactive"></div>
+            <div class="slide slide-banner4 slide-inactive"></div>
+            <div class="slide slide-banner5 slide-inactive"></div>
+            <div class="slide slide-banner6 slide-inactive"></div>
+
+            <div class="slide-overlay"></div>
+
+            <div class="slide-text">
+                <h1>Hari ini menanam aksi,<br>esok menuai inspirasi!</h1>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <article class="about-article">
+            <div class="container about-grid reveal">
+                <img src="images/aboutUs.jpg" alt="Komunitas Untuk Esok" class="about-img">
+                <div class="text-center">
+                    <h2 class="section-heading">Tentang Kami</h2>
+                    <p class="about-text">
+                        Untuk Esok merupakan komunitas yang dikelola oleh pelajar SMA sebagai ruang bagi generasi muda
+                        untuk berperan aktif dalam memberikan kontribusi nyata kepada masyarakat. Komunitas ini mewadahi
+                        para relawan yang memiliki kepedulian terhadap berbagai isu sosial, khususnya dalam upaya
+                        mendukung tercapainya 17 tujuan dalam Sustainable Development Goals (SDGs).
+                    </p>
+                    <a href="tentangkami.html" class="btn btn-outline about-btn">Selengkapnya</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Programs Section -->
+        <article class="section-padding bg-light">
+            <div class="container reveal">
+                <h2 class="text-center section-heading">Program Kami</h2>
+                <div class="program-grid">
+                    <a href="program.html" class="program-img-card program-bg-literasi"
+                        aria-label="Program Literasi"></a>
+                    <a href="program.html" class="program-img-card program-bg-komputer"
+                        aria-label="Program Komputer"></a>
+                    <a href="program.html" class="program-img-card program-bg-numerasi"
+                        aria-label="Program Numerasi"></a>
+                    <a href="program.html" class="program-img-card program-bg-bahasaInggris"
+                        aria-label="Program Bahasa Inggris"></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- CTA Section -->
+        <article class="section-padding bg-catalina cta-section">
+            <div class="container reveal">
+                <h2 class="cta-heading">Bersama Wujudkan Perubahan</h2>
+                <div class="cta-buttons">
+                    <a href="donasi.html" class="btn btn-orange">Donate Now</a>
+                    <a href="program.html" class="btn btn-outline-white">Join Us</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Untuk Esok Logo" class="footer-logo">
+                    </a>
+                    <p class="footer-tagline">Hari ini menanam aksi, esok menuai inspirasi!</p>
+                </div>
+                <div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentangkami.html">Tentang Kami</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="donasi.html">Donasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-contact-heading">Hubungi Kami</h3>
+                    <ul class="footer-links">
+                        <li>Email: untukesok180126@gmail.com</li>
+                        <li>Instagram: @untukesok</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Untuk Esok. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+
+</html>

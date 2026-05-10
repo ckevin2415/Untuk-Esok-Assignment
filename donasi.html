@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi | Untuk Esok</title>
+    <meta name="description" content="Dukung aksi nyata Untuk Esok dengan berdonasi. Setiap rupiah membuat perbedaan bagi generasi masa depan.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar-header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Untuk Esok Logo" class="navbar-logo">
+        </a>
+
+        <div class="navbar-spacer"></div>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul class="navbar-ul">
+                <li><a href="index.html"       class="nav-item">Beranda</a></li>
+                <li><a href="tentangkami.html" class="nav-item">Tentang Kami</a></li>
+                <li><a href="program.html"     class="nav-item">Program</a></li>
+                <li><a href="donasi.html"      class="btn btn-orange">Donasi</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="index.html"       class="mobile-nav-item">Beranda</a>
+        <a href="tentangkami.html" class="mobile-nav-item">Tentang Kami</a>
+        <a href="program.html"     class="mobile-nav-item">Program</a>
+        <a href="donasi.html"      class="mobile-donate-btn">Donasi</a>
+    </nav>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+    <article class="section-padding bg-light donation-article">
+        <div class="container">
+            <h1 class="text-center section-heading">Dukung Aksi Kami</h1>
+
+            <div class="donation-container">
+                <div class="donation-card-main">
+                    <h2 class="donation-title">Donasi</h2>
+
+                    <!-- Step Indicator -->
+                    <div class="step-indicator" role="group" aria-label="Langkah donasi">
+                        <div class="step-circle active" id="step1-circle">1</div>
+                        <div class="step-line"></div>
+                        <div class="step-circle" id="step2-circle">2</div>
+                    </div>
+
+                    <!-- Step 1: Amount -->
+                    <div class="donation-step active" id="step-1">
+                        <label class="input-label" for="donation-amount">Jumlah</label>
+                        <div class="amount-input-wrapper">
+                            <span class="currency-prefix">Rp</span>
+                            <input
+                                type="text"
+                                id="donation-amount"
+                                class="amount-input"
+                                placeholder="0"
+                                maxlength="12"
+                                inputmode="numeric"
+                                autocomplete="off"
+                            >
+                        </div>
+
+                        <div class="donation-footer">
+                            <div class="total-summary">
+                                <p>Jumlah Total :</p>
+                                <h3 id="total-display">Rp 0</h3>
+                            </div>
+                            <button class="btn btn-large btn-donation-next" id="btn-next" disabled>
+                                Lanjutkan
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Summary -->
+                    <div class="donation-step" id="step-2">
+                        <div class="summary-white-card">
+                            <div class="summary-header">
+                                <h3 class="summary-card-title">Donation Summary</h3>
+                            </div>
+                            <div class="summary-row line-below">
+                                <span>Donation</span>
+                                <span class="summary-amount" id="summary-amount">Rp 0</span>
+                            </div>
+
+                            <div class="bank-details-section">
+                                <div class="bank-header">
+                                    <h4 class="bank-transfer-title">Bank Transfer</h4>
+                                    <img src="images/BCA.png" alt="Bank BCA" class="bank-bca-logo">
+                                </div>
+
+                                <table class="bank-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Account Name</td>
+                                            <td class="data-cell">Komang Ayu Rheia Sandrakirana Rucika</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Account Number</td>
+                                            <td class="data-cell">7725736959</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bank Name</td>
+                                            <td class="data-cell">PT Bank Central Asia Tbk.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <p class="receipt-note">
+                            Mohon kirimkan bukti transfer ke
+                            <strong>untukesok180126@gmail.com</strong>
+                        </p>
+
+                        <div class="donation-footer-step2">
+                            <div class="total-summary-center">
+                                <p>Total Amount :</p>
+                                <h3 id="total-display-2">Rp 0</h3>
+                            </div>
+                            <button class="btn btn-outline-white" id="btn-back">
+                                Kembali
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Untuk Esok Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">Hari ini menanam aksi, esok menuai inspirasi!</p>
+            </div>
+            <div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="donasi.html">Donasi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-contact-heading">Hubungi Kami</h3>
+                <ul class="footer-links">
+                    <li>Email: untukesok180126@gmail.com</li>
+                    <li>Instagram: @untukesok</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Untuk Esok. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="donasi.js"></script>
+</body>
+</html>
